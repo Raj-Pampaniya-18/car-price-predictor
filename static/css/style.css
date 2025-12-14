@@ -1,0 +1,122 @@
+/* ---------- Global Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Body ---------- */
+body.bg-dark {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+}
+
+/* ---------- Container ---------- */
+.container {
+    padding-top: 40px;
+}
+
+/* ---------- Card ---------- */
+.card {
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ---------- Card Header ---------- */
+.card-header {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.card-header h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ---------- Card Body ---------- */
+.card-body {
+    padding: 30px;
+}
+
+/* ---------- Headings ---------- */
+h5 {
+    color: #444;
+    font-weight: 500;
+}
+
+/* ---------- Form Groups ---------- */
+.form-group {
+    margin: 0 auto 18px auto;
+}
+
+/* ---------- Labels ---------- */
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* ---------- Inputs & Select ---------- */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* ---------- Button ---------- */
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Prediction Text ---------- */
+#prediction {
+    color: #1d2671;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-header h1 {
+        font-size: 1.6rem;
+    }
+}
